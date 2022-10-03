@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="6" skipped="0" tests="17" time="0.163" timestamp="2022-10-03T16:36:30.753941" hostname="BALP-Depani"><testcase classname="test_compare" name="test_greater" time="0.001"><failure message="assert 100 &gt; 100">@pytest.mark.great
+    def test_greater():
+       num = 100
+&gt;      assert num &gt; 100
+E      assert 100 &gt; 100
+
+test_compare.py:5: AssertionError</failure></testcase><testcase classname="test_compare" name="test_greater_equal" time="0.000" /><testcase classname="test_compare" name="test_less" time="0.000" /><testcase classname="test_compare" name="test_less_than" time="0.000" /><testcase classname="test_fixtures" name="test_divisible_by_3" time="0.001" /><testcase classname="test_fixtures" name="test_divisible_by_6" time="0.001"><failure message="assert (39 % 6) == 0">input_value = 39
+
+    def test_divisible_by_6(input_value):
+&gt;       assert input_value % 6 == 0
+E       assert (39 % 6) == 0
+
+test_fixtures.py:15: AssertionError</failure></testcase><testcase classname="test_fixtures" name="test_divisible_by_5" time="0.000" /><testcase classname="test_fixtures" name="test_divisible_by_10" time="0.000" /><testcase classname="test_fixtures" name="test_divisible_by_2" time="0.000" /><testcase classname="test_parametrization" name="test_multiplication[1-11]" time="0.000" /><testcase classname="test_parametrization" name="test_multiplication[2-22]" time="0.000" /><testcase classname="test_parametrization" name="test_multiplication[3-34]" time="0.001"><failure message="assert (3 * 11) == 34">num = 3, output = 34
+
+    @pytest.mark.parametrize("num,output",[(1,11),(2,22),(3,34),(4,45),(5,55)])
+    def test_multiplication(num,output):
+&gt;       assert num*11 == output
+E       assert (3 * 11) == 34
+
+test_parametrization.py:5: AssertionError</failure></testcase><testcase classname="test_parametrization" name="test_multiplication[4-45]" time="0.001"><failure message="assert (4 * 11) == 45">num = 4, output = 45
+
+    @pytest.mark.parametrize("num,output",[(1,11),(2,22),(3,34),(4,45),(5,55)])
+    def test_multiplication(num,output):
+&gt;       assert num*11 == output
+E       assert (4 * 11) == 45
+
+test_parametrization.py:5: AssertionError</failure></testcase><testcase classname="test_parametrization" name="test_multiplication[5-55]" time="0.000" /><testcase classname="test_squares" name="test_sqrt" time="0.000" /><testcase classname="test_squares" name="testsquare" time="0.000"><failure message="assert (7 * 7) == 40">@pytest.mark.square
+    def testsquare():
+       num = 7
+&gt;      assert 7*7 == 40
+E      assert (7 * 7) == 40
+
+test_squares.py:12: AssertionError</failure></testcase><testcase classname="test_squares" name="test_equality" time="0.001"><failure message="assert 10 == 11">@pytest.mark.others
+    def test_equality():
+&gt;      assert 10 == 11
+E      assert 10 == 11
+
+test_squares.py:16: AssertionError</failure></testcase></testsuite></testsuites>
