@@ -14,3 +14,8 @@ def testsquare():
 @pytest.mark.others
 def test_equality():
    assert 10 == 11
+   
+ 
+@pytest.mark.others
+def test_equality():
+   assert 10 == 11
