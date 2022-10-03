@@ -21,3 +21,6 @@ def test_divisible_by_5(input_data):
 
 def test_divisible_by_10(input_data):
     assert input_data % 10 == 0
+
+def test_divisible_by_2(input_data):
+    assert input_data % 2 == 0
