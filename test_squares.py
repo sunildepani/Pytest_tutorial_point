@@ -18,4 +18,4 @@ def test_equality():
  
 @pytest.mark.others
 def test_equality():
-   assert 10 == 11
+   assert 10 == 12
